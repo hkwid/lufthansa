@@ -1,0 +1,37 @@
+<html>
+<head>
+    <script src="scripts/jquery-2.1.4/jquery.min.js" type="text/javascript" language="javascript"><!--jquery-ui.position--></script>
+    <script src="scripts/jquery-ui-1.11.4.custom/jquery-ui.min.js" type="text/javascript" language="javascript"></script>
+    <link rel="stylesheet" href="scripts/jquery-ui-1.11.4.custom/jquery-ui.min.css" type="text/css" media="all" />
+
+    <link rel="stylesheet" href="styles/styles.css" type="text/css" media="all" />
+    <script src="scripts/immediate.js" type="text/javascript" language="javascript"></script>
+    <script src="immediate.js" type="text/javascript" language="javascript"></script>
+
+</head>
+<body>
+
+<div id="background">
+    <img src="immediate.jpg" />
+</div>
+
+<div id="immediateDevice">
+    <h1>Kiosk ID: <span id="kioskIdentifier"></span></h1>
+    <h2>Welcome Guest</h2>
+    <dl>
+        <dt>Name</dt>
+        <dd id="deviceName"></dd>
+
+        <dt>Major</dt>
+        <dd id="major"></dd>
+        <dt>Minor</dt>
+        <dd id="minor"></dd>
+    </dl>
+
+    <input type="button" class="newAerButton" id="messageButton1" value="Get Coupon" onclick="messageSendCoupon();"/><br/>
+    <br/>
+    <input type="button" class="newAerButton" id="messageButton2" value="NewAer Developer Portal" onclick="messageDeveloperPortal();"/><br/>
+
+</div>
+</body>
+</html>

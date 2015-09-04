@@ -1,0 +1,119 @@
+html {
+    font-family:arial;
+}
+#background {
+    width: 1024px;
+    height: 600px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    -khtml-opacity:.75;
+    -moz-opacity:.75;
+    -ms-filter:"alpha(opacity=75)";
+    filter:alpha(opacity=75);
+    opacity:.75;
+}
+.stretch {
+    width:100%;
+}
+
+#noDevices {
+    margin-top:100px;
+    margin-left:100px;
+    color:black;
+}
+
+#inrangeDevices {
+    margin-top:100px;
+    margin-left:40px;
+    color:black;
+}
+
+#immediateDevice {
+    margin-top:100px;
+    margin-left:40px;
+    color:black;
+}
+
+#leftCol {
+    width:70%;
+    font-size:24px;
+    font-weight:lighter;
+}
+
+#guide {
+    position:absolute;
+    top:600px;
+    left:0px;
+    width:1024px;
+    height:168px;
+    border:1px green solid;
+    font-weight:bold;
+}
+
+.guideText
+{
+    text-align:center;
+    margin-bottom:0px;
+
+}
+.guideRight {
+    position:relative;
+    float:right;
+}
+.guideRightImage {
+    vertical-align:top;
+    width:50px;
+}
+.guideLeft {
+    margin-left:20px;
+    float:left;
+    position:relative;
+}
+.guideLeftImage {
+    vertical-align:top;
+    width:50px;
+    float:left;
+}
+
+.guideCenter {
+    clear:both;
+    text-align:center;
+    position:absolute;
+    bottom:40px;
+    width:1024px;
+}
+dl {
+    font-size:30px;
+}
+tr.group,
+tr.group:hover {
+    background-color: #ddd !important;
+}
+
+h1 {
+    font-size:36px;
+}
+h2 {
+    font-size:24px;
+}
+
+#devices {
+    font-size:24px;
+}
+
+#devices .locatorColumn {
+    max-width:100px;
+}
+#devices .rssiColumn {
+    max-width:100px;
+}
+#devices .seenColumn {
+    max-width:100px;
+}
+
+.newAerButton {
+    height:50px;
+    font-size:20px;
+}
