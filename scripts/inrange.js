@@ -2,7 +2,7 @@ var datatable;
 var devices = null;
 var deviceArray = [];
 var selectedRowId = false;
-
+var result = {};
 
 $(function () {
     console.log("jquery start");
@@ -98,7 +98,7 @@ function parse_query_string(string)
     b['page'] = page;
     return b;
 }
-var result;
+
 function NAUpdate(devicesPresent)
 {
 //    console.log("Update called with devicesPresent: "+devicesPresent);
