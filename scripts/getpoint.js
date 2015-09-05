@@ -39,7 +39,7 @@ $(document).ready(function() {
   };
 
   my.showPoint = function(point) {
-    $("#inrangeDevices").append('<img src="./you_get_coins.png"/>');
+    $("#inrangeDevices").append('<img src="images/you_get_coins.png"/>');
     console.log("yes");
   };
   my.showPoint(point);
