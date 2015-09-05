@@ -3,23 +3,22 @@
     <script src="scripts/jquery-2.1.4/jquery.min.js" type="text/javascript" language="javascript"><!--jquery-ui.position--></script>
     <script src="scripts/jquery-ui-1.11.4.custom/jquery-ui.min.js" type="text/javascript" language="javascript"></script>
     <link rel="stylesheet" href="scripts/jquery-ui-1.11.4.custom/jquery-ui.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="styles/animate.css" type="text/css" media="all" />
 
     <script src="scripts/datatables/jquery.dataTables.min.js" type="text/javascript" language="javascript"></script>
     <link rel="stylesheet" href="scripts/datatables/jquery.dataTables.min.css" type="text/css" media="all" />
 
     <link rel="stylesheet" href="styles/styles.css" type="text/css" media="all" />
     <script src="scripts/inrange.js" type="text/javascript" language="javascript"></script>
-    <script src="scripts/_inrange.js" type="text/javascript" language="javascript"></script>
     <script src="scripts/getpoint.js"></script>
     <script src="scripts/oi_animation.js"></script>
+    <link rel="stylesheet" href="styles/oi_styles.css" type="text/css" media="all" />
 </head>
 <body>
 
 <div id="background">
     <img src="images/inrange_back.png" />
 </div>
-<textarea name="result" id="result" cols="30" rows="10"></textarea>
+<textarea name="result" id="result" cols="30" rows="30"></textarea>
 <div id="inrangeDevices">
 <!--
     <h1>Kiosk ID: <span id="kioskIdentifier"></span></h1>
@@ -31,6 +30,53 @@
     <textarea name="result" id="result" cols="100" rows="10"></textarea>
 -->
 </div>
-<div class="result-ranking"></div>
+
+<div id="scenes">
+
+<div id="btnSceneNext">
+</div>
+
+<div class="scene scene00">
+<img src="images/images/s00_bg.png" />
+<img src="images/images/s00_title.png" />
+</div>
+
+<div class="scene scene01">
+<img src="images/images/s01_all.png" />
+<img src="images/images/s01_icon1.png" />
+<img src="images/images/s01_icon2.png" />
+<img src="images/images/s01_icon3.png" />
+</div>
+
+<div class="scene scene02">
+<img src="images/images/s02_all.png" />
+</div>
+
+<div class="scene scene03">
+<img src="images/images/s03_game.png" />
+<img src="images/images/s03_people_join.png" />
+<img src="images/images/s03_roulette.jpg" />
+</div>
+
+<div class="scene scene04">
+<img src="images/images/s04_roulette_only.png" />
+</div>
+
+<div class="scene scene05">
+<img src="images/images/s05_lose.png" />
+</div>
+
+<div class="scene scene06">
+<img src="images/images/s06_ranking_all.png" />
+</div>
+
+
+</div>
+
+
 </body>
 </html>
+
+
+
+
