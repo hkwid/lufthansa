@@ -103,7 +103,7 @@ function NAUpdate(devicesPresent)
 {
 //    console.log("Update called with devicesPresent: "+devicesPresent);
     unescape(devicesPresent);
-    result = '';
+    result = {};
     // Update
     for (var key in devices) {
         if(devicesPresent.hasOwnProperty(key)) {
@@ -114,9 +114,9 @@ function NAUpdate(devicesPresent)
             removeDevice(devices[key]);
         }
     }
-    $("#result").val(JSON.stringify(result));
-    alert(result);
-    //sleep( 1500 );
+    $("#result").val();
+    //alert(result);
+
     // Add
     for (var key in devicesPresent) {
         if (devices == null || devices.hasOwnProperty(key) == false) {
@@ -130,7 +130,7 @@ function updateDevice(device)
 //    console.log("Updating device: "+device.deviceId);
     row = datatable.api().row('#'+device.deviceId);
     row.data(device).draw();
-    result += JSON.stringify(device);
+    realut += JSON.stringify(device);
 }
 
 function removeDevice(device)
