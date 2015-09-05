@@ -8,6 +8,7 @@ echo<<<EOF
 <li><a href="coin.php">Coin no param</a></li>
 <li><a href="coin.php?deviceid=abc&user_deviceid=11111">Coin</a></li>
 <li><a href="get_coins.php?deviceid=abc">Get Coins</a></li>
+<li><a href="score.php?deviceid=abc&name=foo&score=1000">Put Score</a></li>
 </ul>
 </div>
 EOF;
