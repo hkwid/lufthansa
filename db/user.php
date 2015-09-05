@@ -1,4 +1,36 @@
 <?php
+/*
+
+
+// ビーコンに近づいた際にコインを追加する処理
+
+パラメータ
+
+deviceId :  お客さんid
+beacon_name : ビーコン名(これをidとみなすかも)
+major : major
+minor : minor
+
+user_name : ユーザ入力によるニックネーム
+seat_no : 席番号
+flight_no : フライトNo
+
+サンプルURL
+http://xmlmill.net/sites/_hackathon/db/user.php?user_name=Hajime&seat_no=333&flight_no=55333&deviceId=IB946c5e3cb294007a27cec8b0d0a2606fda95d83a&major=0&minor=3
+
+返り値(json)
+
+成功 :
+{status:true}
+
+失敗 :
+{status:false}
+
+
+
+*/
+
+
 require_once 'inc/db.php';
 ?>
 <?php
