@@ -8,11 +8,11 @@ html {
     left: 0px;
     top: 0px;
     z-index: -1;
-    -khtml-opacity:.75;
+    /*-khtml-opacity:.75;
     -moz-opacity:.75;
     -ms-filter:"alpha(opacity=75)";
     filter:alpha(opacity=75);
-    opacity:.75;
+    opacity:.75;*/
 }
 .stretch {
     width:100%;
@@ -116,4 +116,8 @@ h2 {
 .newAerButton {
     height:50px;
     font-size:20px;
+}
+
+#inrangeDevices {
+  text-align: center;
 }
