@@ -138,7 +138,6 @@ $(document).ready(function() {
   my.showCoins = function(coin) {
     $("#inrangeDevices").append('<img src="images/you_get_coins.png"/>');
   };
-  my.showCoins(10);
 
   my.showResult = function(_result) {
     $(".result-ranking").append('<p>' + _result + '</p>');
