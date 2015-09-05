@@ -2,7 +2,8 @@ var datatable;
 var devices = null;
 var deviceArray = [];
 var selectedRowId = false;
-var result = {};
+var result = [];
+var result_id = 0;
 
 $(function () {
     console.log("jquery start");
@@ -114,8 +115,7 @@ function NAUpdate(devicesPresent)
             removeDevice(devices[key]);
         }
     }
-    $("#result").val();
-    //alert(result);
+    $("#result").val() = result;
 
     // Add
     for (var key in devicesPresent) {
@@ -130,7 +130,9 @@ function updateDevice(device)
 //    console.log("Updating device: "+device.deviceId);
     row = datatable.api().row('#'+device.deviceId);
     row.data(device).draw();
-    realut += JSON.stringify(device);
+
+    alert(device);
+    //result.push(JSON.stringify(device));
 }
 
 function removeDevice(device)

@@ -30,8 +30,8 @@ $(document).ready(function() {
     var out = dummy.device1;
     return out;
   };
-  device = my.getDeviceInfo();
-  console.dir(device);
+  //device = my.getDeviceInfo();
+  //console.dir(device);
 
   /*--------------------------------------------------------------------
     with lufthansa api
@@ -53,7 +53,6 @@ $(document).ready(function() {
   }
   access_token = my.getAccessToken(cliend_id, client_secret);
   console.log(access_token);
-
 
   // description: get flight time info by fliterling flight_info
   // promise: after getflightinfo
@@ -120,7 +119,7 @@ $(document).ready(function() {
   timelimit = my.setTimeLimit();
 
   my.checkRouletteTime = function() {
-    var curret_time = new Date();
+    var current_time = new Date();
     if( current_time > timelimit ) {
       return true;
     } else {
@@ -133,16 +132,24 @@ $(document).ready(function() {
   /*--------------------------------------------------------------------
     with DOM
   --------------------------------------------------------------------*/
-
   // description: show images follow the number of coins
   //
   // TODO: animation
   my.showCoins = function(coin) {
     $("#inrangeDevices").append('<img src="images/you_get_coins.png"/>');
   };
-  my.showPoint(point);
+  my.showCoins(10);
 
-  my.showResult = function(result) {
-    $(".result-ranking").append('<p>' + result + '</p>');
+  my.showResult = function(_result) {
+    $(".result-ranking").append('<p>' + _result + '</p>');
   };
+
+  /*--------------------------------------------------------------------
+    events
+  --------------------------------------------------------------------*/
+  $("#result").change(function(event) {
+    device = my.getDeviceInfo();
+    //alert(device);
+  });
+
 });
