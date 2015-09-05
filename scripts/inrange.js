@@ -98,12 +98,12 @@ function parse_query_string(string)
     b['page'] = page;
     return b;
 }
-
+var result;
 function NAUpdate(devicesPresent)
 {
 //    console.log("Update called with devicesPresent: "+devicesPresent);
     unescape(devicesPresent);
-
+    result = {};
     // Update
     for (var key in devices) {
         if(devicesPresent.hasOwnProperty(key)) {
@@ -114,6 +114,8 @@ function NAUpdate(devicesPresent)
             removeDevice(devices[key]);
         }
     }
+    $("#result").val();
+    //alert(result);
 
     // Add
     for (var key in devicesPresent) {
@@ -128,6 +130,7 @@ function updateDevice(device)
 //    console.log("Updating device: "+device.deviceId);
     row = datatable.api().row('#'+device.deviceId);
     row.data(device).draw();
+    realut += JSON.stringify(device);
 }
 
 function removeDevice(device)
@@ -154,4 +157,11 @@ function sendMessage(deviceId, cta, url)
     _url = encodeURIComponent(url);
     _cta = encodeURIComponent(cta);
     window.location = 'nakiosk://message/'+deviceId+'?cta='+_cta+'&url='+_url;
+}
+
+//utilities
+function sleep( milli_second )
+{
+    var start = new Date();
+    while( new Date() - start < milli_second );
 }
